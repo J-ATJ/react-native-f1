@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap');
+
+body {
+    background-color: #fff;
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h1 {
+    max-width: 90%;
+    text-align: center;
+}
+
+.info p {
+    max-width: 70%;
+    text-align: center;
+}
+
+.content {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.demo {
+    width: 40%;
+    text-align: center;
+}
+
+.demo iframe {
+    margin: 20px 0;
+}
+
+.tools {
+    width: 40%;
+    text-align: center;
+}
+
+.pics {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pic-div {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    max-width: 120px;
+}
+
+.pic-div .pic {
+    max-width: 90%;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .demo {
+        width: 100%;
+    }
+
+    .tools {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .info p {
+        max-width: 90%;
+    }
+
+    .pic-div {
+        max-width: 70px;
+        justify-content: center;
+    }
+
+}
